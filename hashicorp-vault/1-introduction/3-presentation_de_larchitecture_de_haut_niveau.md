@@ -12,7 +12,7 @@ Nous avons tout d'abord le coeur (core) où nous avons le **stockage** et le **s
 
 - Nous pouvons adopter une approche similaire avec un client qui veut s'authentifier auprès d'une base de données DigitalOcean située sur le fournisseur de services cloud DigitalOcean. Il utiliserait les informations d'identification de la base de données dynamique, qui leur sont propres et qui sont uniques à cette base de données.
 
-![test](../images/chap2_architecture.png)
+![chap2_architecture.png](../images/chap2_architecture.png)
 
 
 2. **Composition de l'architecture**
@@ -20,4 +20,4 @@ Nous avons tout d'abord le coeur (core) où nous avons le **stockage** et le **s
 Prenons l'exemple de 3 instances **vault** qui partagent un **backend commun**. En général, le ou les clients communiqueraient avec une seule instance, qui serait un leader élu entre eux. Maintenant, si le leader élu tombe en panne, pour une raison quelconque par exemple une panne de courant dans le serveur ou autre, un autre leader serait élu. Et la communication passerait toujours sans aucun problème. Si le client, par hasard, communique avec d'autres instances **vault**, autre qu'avec le chef élu, la communication sera transmise au chef.
 Encore une fois, il n'y avait qu'un seul chemin emprunté pour tout type de communication lorsque nous demandons une authentification et une autorisation à divers serveurs et services.
 
-![test](../images/chap2_client_et_backend.png)
+![chap2_client_et_backend.png](../images/chap2_client_et_backend.png)
