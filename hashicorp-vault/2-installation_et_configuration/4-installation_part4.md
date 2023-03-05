@@ -142,3 +142,23 @@ Nous devons desceller au moins 3 clés (issus du résultat de la commande **vaul
 ```
 vault operator unseal valeurCle
 ```
+
+Nous pouvons installer la saisie semi-automatique pour les commandes Vault.
+
+```
+vault -autocomplete-install
+```
+
+Nous pouvons activer après cette installation l'autocompletion.
+
+```
+complete -C /usr/bin/vault vault
+```
+
+Pour tester nos configurations, nous pouvons nous connecter au vault à l'aide du jeton racine fourni à la sortie du résultat de la commande **vault operator init**:
+
+```
+vault login <JETON_RACINE>
+```
+
+Si tout se passe bien, nous verrons le message de succès.
