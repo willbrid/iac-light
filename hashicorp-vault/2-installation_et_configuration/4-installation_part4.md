@@ -123,7 +123,7 @@ sudo systemctl start vault
 vault operator init
 ```
 
-L'argument **kv** de la commande **consul** permet d'nteragir avec son magasin **clé-valeur**. Avec son argument **delete** et son **-recurse** (de l'argument **delete**), il permet de supprimer de manière récursive un magasin **clé-valeur** précisé en argument (**vault/**).
+L'argument **kv** de la commande **consul** permet d'nteragir avec son magasin **clé-valeur**. Avec son argument **delete** et son option **-recurse** (de l'argument **delete**), il permet de supprimer de manière récursive un magasin **clé-valeur** précisé en argument (**vault/**).
 
 <br>
 
