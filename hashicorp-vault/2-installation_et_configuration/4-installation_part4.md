@@ -127,6 +127,20 @@ L'argument **kv** de la commande **consul** permet d'nteragir avec son magasin *
 
 <br>
 
+Nous aurons en sortie :
+
+```
+Unseal Key 1: BJeEhkVMjR39RGo4C2X6gQyMew5ufDcalp8F3UWLq9jA
+Unseal Key 2: hkriOJpkbUHt2uhXWrvFjZ0kjCWS8WESCu4G353eIs+I
+Unseal Key 3: Kz6UT4caGE5IexpwuZWuf9MSsQRdEuAEpIADEFlWMuZl
+Unseal Key 4: DqPVn3J4Vmt2L73Sf274xfDG/yyT7A79/TfnTrfF0hkn
+Unseal Key 5: 6c6cY920kRvpVlAJ9iQxoL7yAD8CmFyg+F/K5y8I8lBj
+
+Initial Root Token: hvs.oYcFoZDwF595Zi5hUHGdemO9
+```
+
+<br>
+
 Après avoir éxécuté la commande **vault operator init**, nous obtenons dans le résultat le message : 
 
 ```
