@@ -2,7 +2,7 @@
 
 Lorsqu'un serveur Vault est démarré, il démarre dans un état scellé. Dans cet état, Vault est configuré pour savoir où et comment accéder au stockage physique, mais ne sait pas comment le déchiffrer.
 <br>
-Le descellement est le processus d'obtention de la clé racine en clair nécessaire pour lire la clé de déchiffrement afin de déchiffrer les données, permettant l'accès au coffre-fort.
+Le descellement est le processus d'obtention de la clé racine en clair nécessaire pour lire la clé de déchiffrement afin de déchiffrer les données, permettant l'accès au Vault.
 <br>
 Avant le descellement, presque aucune opération n'est possible avec Vault. Par exemple, l'authentification, la gestion des tables de montage, etc. ne sont pas possibles. Les seules opérations possibles sont de desceller le Vault et de vérifier l'état du scellé.
 <br>
